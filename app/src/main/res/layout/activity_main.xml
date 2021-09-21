@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/purple"
+    tools:context=".MainActivity">
+
+
+
+    <ImageView
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toTopOf="@+id/et_email"
+
+        android:background="@drawable/image_backdround"
+        android:layout_width="190dp"
+        android:layout_height="185dp"/>
+
+    <EditText
+        android:id="@+id/et_email"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="30dp"
+        android:background="@drawable/round"
+        android:drawableStart="@drawable/ic_person"
+        android:drawablePadding="15dp"
+        android:hint="Email"
+        android:padding="17dp"
+        android:textColorHint="@color/white"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.429"
+        tools:layout_editor_absoluteX="16dp" />
+
+    <EditText
+        android:id="@+id/et_password"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="30dp"
+        android:layout_marginTop="17dp"
+        android:background="@drawable/round"
+        android:drawableStart="@drawable/ic_baseline_lock_24"
+        android:drawablePadding="15dp"
+        android:hint="Password"
+        android:padding="17dp"
+        android:textColorHint="@color/white"
+        app:layout_constraintTop_toBottomOf="@id/et_email" />
+
+
+    <CheckBox
+        android:id="@+id/checkbox_box"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="15dp"
+        android:checked="true"
+        android:text="Remember me"
+        android:textColor="@color/white"
+        android:textSize="20dp"
+        app:layout_constraintLeft_toLeftOf="@id/et_password"
+        app:layout_constraintTop_toBottomOf="@id/et_password"
+        />
+
+    <TextView
+        android:id="@+id/checkbox_box2"
+        android:layout_width="wrap_content"
+        android:drawableStart="@drawable/ic_baseline_lock_open_24"
+        android:layout_height="wrap_content"
+        android:layout_margin="18dp"
+        android:text="Forget Password"
+        android:textColor="@color/white"
+        android:textSize="20dp"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/et_password"/>
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/btr_login"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="30dp"
+        android:layout_marginTop="15dp"
+        android:background="@drawable/round_2"
+        android:textSize="18dp"
+        android:text="LOG IN"
+        android:textColor="@color/black"
+        app:layout_constraintTop_toBottomOf="@id/checkbox_box2"
+        tools:ignore="InvalidId" />
+
+    <Button
+        android:id="@+id/btr2_login"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="30dp"
+        android:textSize="18dp"
+        android:textColor="@color/white"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/round_box"
+        android:text="SIGN UP"
+        app:layout_constraintTop_toBottomOf="@id/btr_login"
+        tools:ignore="InvalidId,UnknownId" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
